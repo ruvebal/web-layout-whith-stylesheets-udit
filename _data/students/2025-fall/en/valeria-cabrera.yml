@@ -2,10 +2,10 @@
 # Filename should match student's GitHub username: {username}.yml
 
 handle: sample-student
-name: Sample Student Name
-email: student@udit.es
+name: Valeria Cabrera
+email: valeria.cabrera@udit.es
 github_url: https://github.com/sample-student
-project_url: https://sample-student.github.io/web-project-2025
+project_url: https://valeria45x.github.io/Single-Page-Application-/
 repository_url: https://github.com/sample-student/web-project-2025
 
 # Project metadata (filled by student in Week 4)
