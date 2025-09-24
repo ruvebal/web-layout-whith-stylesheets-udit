@@ -3,10 +3,10 @@
 
 handle: sample-student
 name: Nuria Beiro
-email: student@udit.es
-github_url: https://github.com/sample-student
-project_url: https://sample-student.github.io/web-project-2025
-repository_url: https://github.com/sample-student/web-project-2025
+email: nuria.beiro@alum.udit.es
+github_url: https://github.com/nuriabeoldan-dev
+project_url: https://nuriabeoldan-dev.github.io/proyecto-web/
+repository_url: https://github.com/nuriabeoldan-dev/proyecto-web.git
 
 # Project metadata (filled by student in Week 4)
 title:
