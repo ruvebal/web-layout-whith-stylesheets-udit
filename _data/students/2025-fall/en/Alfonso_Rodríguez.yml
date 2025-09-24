@@ -1,12 +1,12 @@
 # Sample student entry - copy this template for each student
 # Filename should match student's GitHub username: {username}.yml
 
-handle: sample-student
-name: Sample Student Name
-email: student@udit.es
-github_url: https://github.com/sample-student
-project_url: https://sample-student.github.io/web-project-2025
-repository_url: https://github.com/sample-student/web-project-2025
+handle: Fonchitas
+name: Alfonso Rodríguez de Rivas
+email: alfonso.rodriguezderivas@alumnos.udit.es
+github_url: https://github.com/Fonchitas
+project_url: https://fonchitas.github.io/AWDSS_Fonchitas/
+repository_url: https://github.com/Fonchitas/AWDSS_Fonchitas.git
 
 # Project metadata (filled by student in Week 4)
 title:
