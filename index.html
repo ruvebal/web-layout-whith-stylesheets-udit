@@ -1,67 +1,346 @@
-<!--
-Este archivo HTML define la estructura principal de la página web "Advanced Web Design UDIT".
-Incluye las secciones esenciales: cabecera, navegación, contenido principal y pie de página.
-A continuación se explican las funcionalidades y posibles mejoras.
--->
-<!DOCTYPE html> <!-- Declaración del tipo de documento HTML5 -->
-<html lang="en"> <!-- Elemento raíz, define el idioma principal para accesibilidad y SEO -->
-<head>
-    <meta charset="UTF-8"> <!-- Codificación de caracteres para mostrar texto correctamente -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsivo en dispositivos móviles -->
-    <title>Advanced Web Design UDIT</title> <!-- Título que aparece en la pestaña del navegador -->
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos externa -->
-</head>
-<body>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Advanced Web Design UDIT</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/site.css" />
+    <!-- Enlace a la hoja de estilos externa -->
+  </head>
+  <body>
     <!-- Cabecera: incluye el título del sitio y el menú de navegación principal -->
     <header>
-        <h1>Welcome to Advanced Web Design</h1> <!-- Encabezado principal de la página -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li> <!-- Enlace a la página principal -->
-                <li><a href="about.html">About</a></li> <!-- Enlace a la sección "Sobre" -->
-                <li><a href="projects.html">Projects</a></li> <!-- Enlace a proyectos -->
-                <li><a href="contact.html">Contact</a></li> <!-- Enlace a contacto -->
-            </ul>
-        </nav>
+      <h1>Welcome to Advanced Web Design</h1>
+      <!-- Encabezado principal de la página -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- Enlace a la página principal -->
+          <li><a href="about.html">About</a></li>
+          <!-- Enlace a la sección "Sobre" -->
+          <li><a href="projects.html">Projects</a></li>
+          <!-- Enlace a proyectos -->
+          <li><a href="contact.html">Contact</a></li>
+          <!-- Enlace a contacto -->
+        </ul>
+      </nav>
     </header>
 
-
-    
     <main>
-        <!-- Sección de introducción al curso -->
-        <section>
-            <h2>Learn Modern Web Design</h2> <!-- Subtítulo de la sección -->
-            <p>
-                Explore advanced techniques and best practices in web design. 
-                This course covers HTML5, CSS3, JavaScript, responsive layouts, and more.
+      <div class="container-fluid py-5 bg-secondary">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <!-- Hero Section -->
+            <section class="text-center mb-5">
+              <h1 class="display-4 fw-bold text-primary mb-3">
+                Utility-First Bootstrap
+              </h1>
+              <p class="lead text-muted mb-4">
+                Building responsive layouts with Bootstrap's utility classes
+              </p>
+              <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <button class="btn btn-primary px-4 py-2">Get Started</button>
+                <button class="btn btn-outline-secondary px-4 py-2">
+                  Learn More
+                </button>
+              </div>
+            </section>
+
+            <!-- Feature Cards -->
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <article
+                  class="card h-100 border-0 shadow-sm hover:shadow-lg transition-all duration-300"
+                >
+                  <div class="card-body p-4 text-center">
+                    <div class="mb-3">
+                      <div
+                        class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center"
+                        style="width: 48px; height: 48px"
+                      >
+                        🚀
+                      </div>
+                    </div>
+                    <h5 class="card-title fw-semibold mb-3">
+                      Rapid Development
+                    </h5>
+                    <p class="card-text text-muted">
+                      Build complex layouts quickly without writing custom CSS.
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <article
+                  class="card h-100 border-0 shadow-sm hover:shadow-lg transition-all duration-300"
+                >
+                  <div class="card-body p-4 text-center">
+                    <div class="mb-3">
+                      <div
+                        class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center"
+                        style="width: 48px; height: 48px"
+                      >
+                        📱
+                      </div>
+                    </div>
+                    <h5 class="card-title fw-semibold mb-3">Mobile-First</h5>
+                    <p class="card-text text-muted">
+                      Responsive design that works perfectly across all devices.
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <article
+                  class="card h-100 border-0 shadow-sm hover:shadow-lg transition-all duration-300"
+                >
+                  <div class="card-body p-4 text-center">
+                    <div class="mb-3">
+                      <div
+                        class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center"
+                        style="width: 48px; height: 48px"
+                      >
+                        🎨
+                      </div>
+                    </div>
+                    <h5 class="card-title fw-semibold mb-3">
+                      Consistent Design
+                    </h5>
+                    <p class="card-text text-muted">
+                      Maintain design consistency across your entire project.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Call to Action -->
+            <section
+              class="text-center mt-5 p-5 bg-primary text-white rounded-3"
+            >
+              <h2 class="fw-bold mb-3">Ready to Get Started?</h2>
+              <p class="lead mb-4 opacity-75">
+                Join thousands of developers using Bootstrap's utility-first
+                approach.
+              </p>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-light btn-lg px-4 py-2"
+                  >View Documentation</a
+                >
+                <a href="#" class="btn btn-outline-light btn-lg px-4 py-2"
+                  >Get Started</a
+                >
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <!-- Responsive Header -->
+        <header class="bg-primary text-white py-3 py-md-4 py-lg-5">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-8 col-lg-9">
+                <h1 class="display-4 display-md-3 display-lg-2 fw-bold mb-0">
+                  Responsive Header
+                </h1>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3 text-md-end mt-3 mt-md-0">
+                <button class="btn btn-light btn-lg px-4">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="py-4 py-md-5">
+          <div class="container">
+            <div class="row g-4">
+              <!-- Article Cards -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-start mb-3">
+                      <div
+                        class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                        style="width: 40px; height: 40px"
+                      >
+                        📝
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="card-title fw-semibold mb-1">
+                          Article Title
+                        </h6>
+                        <p class="text-muted small mb-2">5 min read</p>
+                      </div>
+                    </div>
+                    <p class="card-text text-muted lh-base">
+                      Article description that adapts to different screen sizes
+                      using Bootstrap's responsive utilities.
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-start mb-3">
+                      <div
+                        class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                        style="width: 40px; height: 40px"
+                      >
+                        🎯
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="card-title fw-semibold mb-1">Tutorial</h6>
+                        <p class="text-muted small mb-2">10 min read</p>
+                      </div>
+                    </div>
+                    <p class="card-text text-muted lh-base">
+                      Step-by-step guide that demonstrates responsive layout
+                      techniques using utility classes.
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm">
+                  <div class="card-body p-4">
+                    <div class="d-flex align-items-start mb-3">
+                      <div
+                        class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                        style="width: 40px; height: 40px"
+                      >
+                        💡
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="card-title fw-semibold mb-1">
+                          Tips & Tricks
+                        </h6>
+                        <p class="text-muted small mb-2">3 min read</p>
+                      </div>
+                    </div>
+                    <p class="card-text text-muted lh-base">
+                      Quick tips for mastering Bootstrap's utility-first
+                      approach to web development.
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Hidden on mobile, visible on larger screens -->
+              <div class="col-12 col-lg-8 d-none d-lg-block">
+                <div class="card border-0 bg-light">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Sidebar Content</h5>
+                    <p class="card-text">
+                      This sidebar content is hidden on mobile devices to
+                      prioritize main content, then appears on large screens
+                      using Bootstrap's responsive display utilities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+          <div class="container text-center">
+            <p class="mb-2">
+              &copy; 2024 Bootstrap Utilities Demo. Built with utility classes.
             </p>
-            <a href="about.html" class="button">Learn More</a> <!-- Botón de llamada a la acción -->
-        </section>
-        <!-- Sección de proyectos destacados -->
-        <section>
-            <h2>Featured Projects</h2> <!-- Subtítulo de la sección -->
-            <ul>
-                <li>Responsive Portfolio Website</li> <!-- Proyecto ejemplo -->
-                <li>Interactive UI Components</li> <!-- Proyecto ejemplo -->
-                <li>Accessibility Best Practices</li> <!-- Proyecto ejemplo -->
-            </ul>
-        </section>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="#" class="text-white text-decoration-none">Privacy</a>
+              <a href="#" class="text-white text-decoration-none">Terms</a>
+              <a href="#" class="text-white text-decoration-none">Support</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Complex card using only utilities -->
+      <article class="card border-0 shadow-sm mb-4">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-start mb-3">
+            <img
+              src="https://picsum.photos/200/300"
+              class="rounded-circle me-3 flex-shrink-0"
+              style="width: 48px; height: 48px"
+              alt="Author"
+            />
+            <div class="flex-grow-1">
+              <h6 class="mb-1 fw-semibold">Article Title</h6>
+              <p class="text-muted small mb-2">By Author Name • 5 min read</p>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-primary">Technology</span>
+                <span
+                  class="badge bg-secondary"
+                  style="
+                    padding: 1rem;
+                    color: blueviolet;
+                    background-color: rgb(168, 57, 81) !important;
+                  "
+                  >Tutorial</span
+                >
+              </div>
+            </div>
+            <button
+              class="btn btn-link p-0 text-muted ms-2"
+              aria-label="More options"
+            >
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <!-- ... -->
+              </svg>
+            </button>
+          </div>
+          <p class="card-text text-muted lh-base mb-3">
+            Article excerpt that demonstrates how utilities create consistent,
+            maintainable layouts...
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-3 text-muted small">
+              <span class="d-flex align-items-center gap-1">
+                <span>👍</span>
+                <span>42</span>
+              </span>
+              <span class="d-flex align-items-center gap-1">
+                <span>💬</span>
+                <span>8</span>
+              </span>
+            </div>
+            <a href="/article" class="btn btn-primary btn-sm px-3 py-2"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </article>
     </main>
     <!-- Pie de página: información legal y derechos de autor -->
     <footer>
-        <p>&copy; 2025 Advanced Web Design UDIT. All rights reserved.</p> <!-- Copyright -->
+      <p>&copy; 2025 Advanced Web Design UDIT. All rights reserved.</p>
+      <!-- Copyright -->
     </footer>
-</body>
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
-<!--
-Posibles mejoras y extensiones:
-- Añadir atributos ARIA y roles para mejorar la accesibilidad.
-- Incluir un favicon y meta descripción para SEO.
-- Implementar un menú responsivo (hamburger menu) para dispositivos móviles.
-- Agregar una sección de testimonios o comentarios de estudiantes.
-- Usar JavaScript para funcionalidades interactivas (por ejemplo, filtrar proyectos).
-- Internacionalización: permitir cambiar el idioma de la página.
-- Validar el HTML con herramientas automáticas para asegurar buenas prácticas.
-- Utilizar Flexbox o CSS Grid para mejorar el diseño y la disposición de los elementos.
-- Integrar formularios de contacto con validación.
--->
