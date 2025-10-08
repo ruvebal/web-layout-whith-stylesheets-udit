@@ -1,0 +1,6 @@
+.btn-primary {
+  color: white;
+  background-color: #007bff;
+  background: var(--primary);
+  color: white;
+}
