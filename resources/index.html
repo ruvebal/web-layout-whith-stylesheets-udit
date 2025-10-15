@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Design Resources — Pablo Rodríguez</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/index.css" />
+  <link rel="stylesheet" href="../assets/css/resources.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="resources-header">
+    <div class="container">
+      <h1>Web Design Resources</h1>
+      <p>Created by Pablo Rodríguez — Web Foundations</p>
+    </div>
+  </header>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="resources-nav">
+    <ul>
+      <li><a href="#frameworks-and-build-tools">Frameworks and Build Tools</a></li>
+      <li><a href="#tools-that-do-not-require-node">Tools that do not require Node.js</a></li>
+      <li><a href="#vanilla-javascript-libraries">Vanilla JavaScript Libraries</a></li>
+      <li><a href="#generators-without-node">Generators Without Node.js</a></li>
+      <li><a href="#reflection">Critical Reflection</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <!-- ===== FRAMEWORKS AND BUILD TOOLS ===== -->
+    <section id="frameworks-and-build-tools" class="tools-section">
+      <h2>Frameworks and Build Tools:</h2>
+      <div class="tools-grid">
+
+        <article class="tool-card">
+          <span class="runtime-badge saas">Node.js</span>
+          <h3><a href="https://webpack.js.org" target="_blank">Webpack</a></h3>
+          <div class="tool-info">
+            <p><strong>Purpose:</strong>To bundle, transform and optimize files and dependencies into efficient assets for the browser.</p>
+            <p><strong>Platform:</strong> Node-based, node .js</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Notes</h4>
+            <p>Webpack is a powerful tool for bundling and optimizing web projects. It’s great for large apps and offers lots of control, though its setup can be a bit complex.</p>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <span class="runtime-badge standalone">Node.js</span>
+          <h3><a href="https://www.snowpack.dev" target="_blank">Snowpack</a></h3>
+          <div class="tool-info">
+            <p><strong>Purpose:</strong>To serve and bundle web applications using native ES modules, making development faster and simpler.</p>
+            <p><strong>Platform:</strong> Node.js.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Notes</h4>
+            <p>Snowpack feels lightweight and fast, especially for modern JavaScript projects. I like how it skips heavy bundling during development, giving instant updates, though it’s less popular now since newer tools like Vite have built on its ideas and surpassed it.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== TOOLS THAT DO NOT REQUIRE NODE ===== -->
+    <section id="tools-that-do-not-require-node" class="tools-section">
+      <h2>Tools that do not require Node.js</h2>
+      <div class="tools-grid">
+
+        <article class="tool-card">
+          <span class="runtime-badge nodejs">HTML, CSS, JavaScript</span>
+          <h3><a href="https://code.visualstudio.com" target="_blank">Bootstrap</a></h3>
+          <div class="tool-info">
+            <p><strong>Purpose:</strong> Quickly design responsive, mobile-first websites using prebuilt CSS and JavaScript components.</p>
+            <p><strong>Platform:</strong> Browser, using HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Notes</h4>
+            <p>Bootstrap is great for speeding up design and ensuring consistency without much effort. I like its ready-to-use components, though sometimes it can make sites look a bit generic if not customized.</p>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <span class="runtime-badge nodejs">HTML</span>
+          <h3><a href="https://nodejs.org" target="_blank">Milligram</a></h3>
+          <div class="tool-info">
+            <p><strong>Purpose:</strong> Provides a simple, clean, and responsive grid system and basic styles, helping you quickly style websites without extra bloat.
+
+Platform:</p>
+            <p><strong>Platform:</strong>Browser, using HTML and CSS.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Notes</h4>
+            <p>Milligram can be used for small projects or prototypes because it’s lightweight and easy to use. It’s not as feature-rich as Bootstrap, but that simplicity can be refreshing and keeps sites fast.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== VANILA JAVASCRIPT LIBRARIES ===== -->
+    <section id="vanilla-javascript-libraries" class="tools-section">
+      <h2>Vanilla JavaScript Libraries</h2>
+      <div class="tools-grid">
+
+        <article class="tool-card">
+          <span class="runtime-badge standalone">Standalone</span>
+          <h3><a href="https://www.postman.com" target="_blank">GSAP</a></h3>
+          <div class="tool-info">
+            <p><strong>Purpose:</strong> Creating high-performance animations on the web, including complex timelines and smooth transitions.</p>
+            <p><strong>Platform:</strong> Browser and Node.js.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Notes</h4>
+            <p>Smooth, precise, and works consistently across browsers. It’s great for adding professional motion effects, though it can feel overkill for simple animations.</p>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <span class="runtime-badge saas">SaaS</span>
+          <h3><a href="https://www.browserstack.com" target="_blank">BrowserStack</a></h3>
+          <div class="tool-info">
+            <p><strong>Purpose:</strong> Cross-browser testing and debugging.</p>
+            <p><strong>Platform:</strong> Cloud-based service.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Notes</h4>
+            <p>BrowserStack provides quick access to various real devices and browsers for testing responsive layouts without extra hardware.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+<!-- ===== GENERATORS WITHOUT NODE ===== -->
+     <section id="generators-without-node" class="tools-section">
+      <h2>Vanilla JavaScript Libraries</h2>
+      <div class="tools-grid">
+
+        <article class="tool-card">
+          <span class="runtime-badge standalone">Standalone</span>
+          <h3><a href="https://www.postman.com" target="_blank">Postman</a></h3>
+          <div class="tool-info">
+            <p><strong>Purpose:</strong> API testing and debugging.</p>
+            <p><strong>Platform:</strong> Desktop and web app.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Notes</h4>
+            <p>Postman simplifies REST API testing with user-friendly request builders and automatic environment variables.</p>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <span class="runtime-badge saas">SaaS</span>
+          <h3><a href="https://www.browserstack.com" target="_blank">BrowserStack</a></h3>
+          <div class="tool-info">
+            <p><strong>Purpose:</strong> Cross-browser testing and debugging.</p>
+            <p><strong>Platform:</strong> Cloud-based service.</p>
+          </div>
+          <div class="personal-notes">
+            <h4>Personal Notes</h4>
+            <p>BrowserStack provides quick access to various real devices and browsers for testing responsive layouts without extra hardware.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== CRITICAL REFLECTION ===== -->
+    <section id="reflection" class="tools-section">
+      <h2>Critical Reflection</h2>
+      <p>
+        This resource collection highlights the interconnected nature of modern web design.
+        From concept (Figma) to implementation (VS Code + Node.js) and verification (Postman + BrowserStack),
+        each tool contributes to building efficient, accessible, and scalable websites.
+        Understanding their roles fosters better collaboration, cleaner code, and more intuitive user experiences.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="resources-footer">
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
