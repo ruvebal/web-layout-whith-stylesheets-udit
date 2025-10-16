@@ -1,0 +1,266 @@
+/* Main style sheet - page layout and typography */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #221443;
+  color: #222;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #221443;
+  color: #f6e9fb;
+  padding: 32px 16px 16px; 
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 15px; 
+  font-weight: 400;
+  color: #e2cded;
+}
+
+/* accent underline */
+header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+  margin: 1px auto 0;
+  border-radius: 5px;
+}
+
+/* ---------- NAV ---------- */
+nav {
+  background-color: #8170aa;
+  padding: 30px 13px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 19px; /* 1.2rem */
+}
+
+nav a {
+  color: #321047;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px; /* 0.95rem */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #7c3aed;
+  text-decoration: underline;
+}
+
+/* ---------- MAIN ---------- */
+main {
+  padding: 56px 32px; /* 3.5rem 2rem */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 64px; /* 4rem */
+}
+
+h2 {
+  font-size: 27px; /* 1.7rem */
+  font-weight: 700;
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 32px; /* 2rem */
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: #a78bfa;
+  margin-top: 8px; /* 0.5rem */
+  border-radius: 3px;
+}
+
+/* ---------- TOOL GRID ---------- */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 32px; /* 2rem */
+}
+
+.tool-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 29px; /* 1.8rem */
+  border: 2px solid #e9d5ff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  border-color: #c4b5fd;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.15);
+}
+
+.tool-card h3 {
+  margin-top: 8px; /* 0.5rem */
+  color: #4c1d95;
+  font-size: 19px; /* 1.2rem */
+  margin-bottom: 5px; /* 0.3rem */
+}
+
+.tool-card p {
+  margin: 6px 0; /* 0.4rem 0 */
+  font-size: 15px; /* 0.93rem */
+  color: #444;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 16px; /* 1rem */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tool-card:hover .logo {
+  transform: scale(1.08);
+  filter: brightness(1.05);
+}
+
+/* ---------- BADGES ---------- */
+.badge {
+  display: inline-block;
+  padding: 6px 11px; /* 0.35rem 0.7rem */
+  border-radius: 10px;
+  font-size: 12px; /* 0.75rem */
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px; /* 0.6rem */
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.badge.nodejs { background-color: #a78bfa; }
+.badge.nonode { background-color: #2563eb; }
+.badge.ruby { background-color: #cc0000; }
+.badge.standalone { background-color: #8b5cf6; }
+.badge.saas { background-color: #f59e0b; }
+
+/* ---------- PERSONAL NOTES SECTION ---------- */
+#notes {
+  background: linear-gradient(135deg, #ede9fe 0%, #faf5ff 100%);
+  color: #111;
+  padding: 32px 32px; /* 4rem 2rem */
+  margin: 64px 0; /* 4rem 0 */
+  border-radius: auto;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+ box-sizing: border-box;
+}
+
+#notes h2 {
+  color: #111;
+}
+
+#notes p {
+  max-width: 900px;
+  margin: 16px auto; /* 1rem auto */
+  color: #333;
+  font-weight: 400;
+  line-height: 1.9;
+  font-size: 16px; /* 1rem */
+}
+
+/* ---------- REFLECTION SECTION ---------- */
+#reflection {
+  background-color: #ffffff;
+  padding: 40px 48px; /* 2.5rem 3rem */
+  border-radius: 18px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  border: 2px solid #e9d5ff;
+}
+
+#reflection h2 {
+  color: #111;
+}
+
+#reflection p {
+  margin-bottom: 16px; /* 1rem */
+  color: #333;
+  line-height: 1.8;
+}
+
+#reflection p strong {
+  color: #6d28d9;
+}
+
+
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #111;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 24px; /* 1.5rem */
+  font-size: 14px; /* 0.9rem */
+  letter-spacing: 0.3px;
+  margin-top: 48px; /* 3rem */
+}
+
+/* ---------- ANIMATION ---------- */
+section, .tool-card, #reflection {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ---------- INTERACTIVE TOUCH ---------- */
+.tool-card:hover h3 {
+  color: #6d28d9;
+}
