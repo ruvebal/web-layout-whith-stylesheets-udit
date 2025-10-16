@@ -1,0 +1,98 @@
+:root {
+  /* --- COLORS --- */
+  --primary: #001b3f;
+  --accent: #8d99ae;
+  --bg: #f8f9fa;
+  --white: #ffffff;
+  --highlight: #ef233c;
+
+  /* --- TYPOGRAPHY --- */
+  --font-head: "Helvetica Neue", sans-serif;
+  --font-body: "Red Hat Display", sans-serif;
+}
+
+@import url("https://fonts.google.com/specimen/Red+Hat+Display?categoryFilters=Feeling:%2FExpressive%2FCalm");
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--primary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: var(--font-head);
+}
+h2 {
+  font-family: var(--font-head);
+}
+h3 {
+  font-family: var(--font-head);
+}
+h4 {
+  font-family: var(--font-head);
+  color: var(--primary);
+}
+
+/* Layout and structure */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+header {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  background-color: var(--accent);
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 0.9rem;
+}
