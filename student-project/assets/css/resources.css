@@ -1,0 +1,84 @@
+/* resources.css – specific tool styling */
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 10px 0px;
+}
+
+.tool-card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.tool-card .badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tool-card:hover {
+  border-color: #001b3f;
+}
+
+.tool-card h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.badge {
+  display: block;
+  margin: 0.5rem auto;
+  width: fit-content;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #84a581;
+  text-align: center;
+}
+
+.badge.node {
+  background-color: #669fce;
+}
+
+.badge.ruby {
+  background-color: #bf4949;
+}
+
+.badge.standalone {
+  background-color: #ac5cc4;
+}
+
+.badge.saas {
+  background-color: #007bff;
+}
+
+.tool-logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 0.8rem auto;
+  object-fit: contain;
+}
+
+#reflection {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+#reflection p {
+  margin: 10px 90px;
+}
+#reflection li {
+  margin: 10px 90px;
+}
