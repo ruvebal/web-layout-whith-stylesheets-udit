@@ -18,23 +18,42 @@
   <body>
     <!-- Cabecera: incluye el título del sitio y el menú de navegación principal -->
     <header>
-      <h1>Welcome to Advanced Web Design</h1>
       <!-- Encabezado principal de la página -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <!-- Enlace a la página principal -->
-          <li><a href="about.html">About</a></li>
-          <!-- Enlace a la sección "Sobre" -->
-          <li><a href="projects.html">Projects</a></li>
-          <!-- Enlace a proyectos -->
-          <li><a href="contact.html">Contact</a></li>
-          <!-- Enlace a contacto -->
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Brand</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About &#128512;</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
+      <h1>Welcome to Advanced Web Design</h1>
       <div class="container-fluid py-5 bg-secondary">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -66,7 +85,7 @@
                         class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center"
                         style="width: 48px; height: 48px"
                       >
-                        🚀
+                        🚀😆🤔
                       </div>
                     </div>
                     <h5 class="card-title fw-semibold mb-3">
@@ -157,7 +176,34 @@
                 </h1>
               </div>
               <div class="col-12 col-md-4 col-lg-3 text-md-end mt-3 mt-md-0">
-                <button class="btn btn-light btn-lg px-4">Get Started</button>
+                <!-- Button variants -->
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">
+                  Secondary
+                </button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+
+                <!-- Outline buttons -->
+                <button type="button" class="btn btn-outline-primary">
+                  Primary
+                </button>
+                <button type="button" class="btn btn-outline-secondary">
+                  Secondary
+                </button>
+
+                <!-- Button sizes -->
+                <button type="button" class="btn btn-primary btn-lg">
+                  Large
+                </button>
+                <button type="button" class="btn btn-primary">Default</button>
+                <button type="button" class="btn btn-primary btn-sm">
+                  Small
+                </button>
               </div>
             </div>
           </div>
@@ -257,20 +303,6 @@
             </div>
           </div>
         </main>
-
-        <!-- Footer -->
-        <footer class="bg-dark text-white py-4">
-          <div class="container text-center">
-            <p class="mb-2">
-              &copy; 2024 Bootstrap Utilities Demo. Built with utility classes.
-            </p>
-            <div class="d-flex justify-content-center gap-3">
-              <a href="#" class="text-white text-decoration-none">Privacy</a>
-              <a href="#" class="text-white text-decoration-none">Terms</a>
-              <a href="#" class="text-white text-decoration-none">Support</a>
-            </div>
-          </div>
-        </footer>
       </div>
 
       <!-- Complex card using only utilities -->
@@ -334,11 +366,47 @@
           </div>
         </div>
       </article>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+          />
+          <div class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" />
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="remember" />
+          <label class="form-check-label" for="remember">Remember me</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </main>
     <!-- Pie de página: información legal y derechos de autor -->
-    <footer>
-      <p>&copy; 2025 Advanced Web Design UDIT. All rights reserved.</p>
-      <!-- Copyright -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p class="mb-2">
+          &copy; 2024 Bootstrap Utilities Demo. Built with utility classes.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#" class="text-white text-decoration-none">Privacy</a>
+          <a href="#" class="text-white text-decoration-none">Terms</a>
+          <a href="#" class="text-white text-decoration-none">Support</a>
+        </div>
+      </div>
     </footer>
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

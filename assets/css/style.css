@@ -9,8 +9,8 @@ body {
   background-color: #007bff;
   background: var(--primary);
   color: white;
-}
 
-.myownstyle {
-  padding: 1rem;
+  .myownstyle {
+    padding: 1rem;
+  }
 }
