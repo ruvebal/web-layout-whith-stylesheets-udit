@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +11,9 @@
   </head>
   <body class="p-3">
     <!-- Pega aquí el markup de los ejercicios -->
-
+    <button class="btn btn-primary" onclick="toggleTheme()">
+      <i class="bi bi-moon-stars-fill" id="theme-icon"></i>
+    </button>
     <nav
       class="navbar navbar-expand-md navbar-dark bg-dark"
       aria-label="Fourth navbar example"
@@ -227,4 +229,50 @@
       </div>
     </div>
   </body>
+  <script>
+    function toggleTheme() {
+      // 1. Get current theme
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-bs-theme");
+
+      // 2. Switch between dark and light
+      const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+      // 3. Apply new theme (ALL Bootstrap components update instantly!)
+      html.setAttribute("data-bs-theme", newTheme);
+
+      // 4. Save to localStorage so it persists
+      localStorage.setItem("theme", newTheme);
+
+      // 5. Update button icon
+      updateThemeIcon(newTheme);
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      // Get saved theme from localStorage
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme) {
+        // Apply saved theme
+        document.documentElement.setAttribute("data-bs-theme", savedTheme);
+        updateThemeIcon(savedTheme);
+      } else {
+        // Optional: Detect OS preference for first visit
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+        if (prefersDark.matches) {
+          document.documentElement.setAttribute("data-bs-theme", "dark");
+          updateThemeIcon("dark");
+        }
+      }
+    });
+
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById("theme-icon");
+      if (theme === "dark") {
+        icon.className = "bi bi-sun-fill"; // Show sun in dark mode
+      } else {
+        icon.className = "bi bi-moon-stars-fill"; // Show moon in light mode
+      }
+    }
+  </script>
 </html>
