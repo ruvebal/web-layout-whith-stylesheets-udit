@@ -1,0 +1,109 @@
+/* Styles specific to the research grid and tool cards */
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(420px, 1fr));
+  gap: 40px;
+  width: 96%;
+  max-width: 1800px;
+  margin: 0 auto;
+  justify-content: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+
+/* ---------- TARJETA ---------- */
+.tool-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px 36px;
+  width: 100%;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid #e9d5ff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  border-color: #c4b5fd;
+}
+
+/* ---------- HEADER (TÍTULO + LOGO) ---------- */
+.tool-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #e9d5ff;
+  padding-bottom: 10px;
+}
+
+.tool-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4c1d95;
+  margin: 0;
+}
+
+.tool-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+
+.tool-card:hover .tool-logo {
+  transform: scale(1.08);
+  filter: brightness(1.05);
+}
+
+/* ---------- CONTENIDO ---------- */
+.tool-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.tool-content p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ---------- BADGES ---------- */
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.badge.nodejs {
+  background-color: #b79dee;
+}
+
+.badge.standalone {
+  background-color: #6366f1;
+}
+
+.badge.saas {
+  background-color: #f59e0b;
+}
